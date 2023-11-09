@@ -1,0 +1,10 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"moduleResolution": "Bundler",
+		"target": "ES2022",
+		"module": "ESNext",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true
+	}
+}
