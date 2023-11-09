@@ -1,7 +1,9 @@
 {
-  "files.readonlyInclude": {
-    "output/**/*.md": true,
-    "output/**/*.json": true
-  },
-  "typescript.tsdk": "node_modules/typescript/lib"
+	"editor.detectIndentation": true,
+	"editor.insertSpaces": false,
+	"files.readonlyInclude": {
+		"output/**/*.json": true,
+		"output/**/*.md": true
+	},
+	"typescript.tsdk": "node_modules/typescript/lib",
 }
