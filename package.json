@@ -1,8 +1,4 @@
 {
-  "name": "poolish",
-  "scripts": {
-    "start": "chmod +x ./src/board.ts && ./src/board.ts"
-  },
   "dependencies": {
     "@google-labs/breadboard": "^0.5.0",
     "@google-labs/core-kit": "^0.0.1",
@@ -12,5 +8,10 @@
     "@types/node": "^20.9.0",
     "typescript": "^5.2.2"
   },
-  "packageManager": "yarn@4.0.1"
+  "name": "poolish",
+  "packageManager": "yarn@4.0.1",
+  "scripts": {
+    "start": "chmod +x ./src/board.ts && ./src/board.ts",
+    "once": "npx -y tsx ./src/board.ts"
+  }
 }
