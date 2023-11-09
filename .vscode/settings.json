@@ -1,0 +1,7 @@
+{
+  "files.readonlyInclude": {
+    "output/**/*.md": true,
+    "output/**/*.json": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
