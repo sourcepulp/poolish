@@ -66,7 +66,7 @@ function writeFiles(board: Board, name = board.title, dir = "./output") {
 function writeJson(dir: string, name: string, board: Board) {
 	const jsonFilePath = path.resolve(path.join(dir, "json", `${name}.json`));
 	fs.mkdirSync(path.dirname(jsonFilePath), { recursive: true });
-	const jsonContent = JSON.stringify(board, null, 2);
+	const jsonContent = JSON.stringify(board, null, "\t");
 	fs.writeFileSync(jsonFilePath, jsonContent);
 	console.log("wrote", `"${jsonFilePath}"`);
 }
