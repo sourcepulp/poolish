@@ -2,20 +2,12 @@
 
 import {
 	Board,
-	InputValues,
 	KitConstructor,
 	LogProbe,
 	NodeValue,
-	OutputValues,
 } from "@google-labs/breadboard";
 import { KitBuilder } from "@google-labs/breadboard/kits";
-
-////////////////////////////////////////////////////////////////////////////////
-
-export type ListInput<T> = InputValues & { list: T[] };
-export type ListOutput<T> = OutputValues & { output?: T[] };
-export type InputSubset<T> = InputValues & { list: T[]; count: number };
-export type HeadTailOutputs<T> = OutputValues & { head?: T[]; tail?: T[] };
+import { ListInput, HeadTailOutputs } from "./types";
 
 const kitBuilder: KitConstructor<any> = new KitBuilder({
 	url: "npm:iterator",
