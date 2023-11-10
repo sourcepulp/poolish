@@ -11,7 +11,7 @@
   "name": "poolish",
   "packageManager": "yarn@4.0.1",
   "scripts": {
-    "start": "chmod +x ./src/board.ts && ./src/board.ts",
-    "once": "npx -y tsx ./src/board.ts"
+    "start": "chmod +x ./src/index.ts && ./src/index.ts",
+    "once": "npx -y tsx ./src/index.ts"
   }
 }
