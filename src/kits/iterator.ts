@@ -24,7 +24,7 @@ const kitBuilder: KitConstructor<any> = new KitBuilder({
 		inputs: ListInput<T>
 	): Promise<HeadTailOutputs<T>> {
 		const { list } = inputs as ListInput<T>;
-		if (input == undefined || list.length == 0) {
+		if (list == undefined || list.length == 0) {
 			return { output: [] };
 		}
 		return {
@@ -52,9 +52,6 @@ pop.wire("output", output);
 
 ////////////////////////////////////////////////////////////////////////////////
 
-export default board;
-
-////////////////////////////////////////////////////////////////////////////////
 const demo = async () => {
 	for await (const stop of board.run({
 		probe: new LogProbe(),
@@ -82,5 +79,11 @@ const demo = async () => {
 		}
 	}
 };
-// demo();
+
 ////////////////////////////////////////////////////////////////////////////////
+
+export default {
+	kit: kitBuilder,
+	board,
+	demo,
+};
