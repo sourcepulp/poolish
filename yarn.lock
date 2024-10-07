@@ -5,46 +5,77 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@google-labs/breadboard@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "@google-labs/breadboard@npm:0.5.0"
-  checksum: 2c94d5bc666733e29c5622a10c593176a09fe02eb33508082c08e2dc672cd3c3bd6b03f9e7820ad1c133c050c00f80b698ef82763375571d8e3241c36fb010d1
+"@breadboard-ai/build@npm:0.10.3":
+  version: 0.10.3
+  resolution: "@breadboard-ai/build@npm:0.10.3"
+  dependencies:
+    "@breadboard-ai/types": "npm:0.1.1"
+    "@google-labs/breadboard": "npm:^0.27.3"
+    "@types/json-schema": "npm:^7.0.15"
+  checksum: d92acc9e0e00823683dc893dd6f813544a39941d6ec91f7fd6b6975dbf845a7a71382e1c9f62e9a2440bfb987d2186f5739ff6e1669a27d4de0c686bf7063f6b
   languageName: node
   linkType: hard
 
-"@google-labs/core-kit@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@google-labs/core-kit@npm:0.0.1"
-  dependencies:
-    "@google-labs/breadboard": "npm:^0.5.0"
-  checksum: 3c2611acc4c9e6f2eb9f3377fc9c5836714292e431bd43322dce72314b164bbeefebd149b53674d5731a667995f4a1e4ca7991a819b56ba90b0943a56d2674dd
+"@breadboard-ai/types@npm:0.1.1":
+  version: 0.1.1
+  resolution: "@breadboard-ai/types@npm:0.1.1"
+  checksum: e4a537938b292ed00591bc676fef7ff4c9268e62dbc199ba0ac1bbdcc69c1371bd823eff25e17667d4f51d56d544285e0d354d50ab9f82bdd72b6cd2d6c09b3e
   languageName: node
   linkType: hard
 
-"@google-labs/llm-starter@npm:^0.2.1":
-  version: 0.2.1
-  resolution: "@google-labs/llm-starter@npm:0.2.1"
+"@google-labs/breadboard-schema@npm:^1.4.1, @google-labs/breadboard-schema@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "@google-labs/breadboard-schema@npm:1.8.1"
   dependencies:
-    "@google-labs/breadboard": "npm:^0.5.0"
-    "@google-labs/palm-lite": "npm:^0.0.2"
-    "@rgrove/parse-xml": "npm:^4.1.0"
-    jsonata: "npm:^2.0.3"
+    "@types/json-schema": "npm:^7.0.15"
+  checksum: cb31944f39af4985291108dc618b44109cb5bb6b1a5df32e95f6ec966923d4e9b56ec62c250552b83d5f3b32231b93c6f98adceec4dfe7961efccad373f8b115
+  languageName: node
+  linkType: hard
+
+"@google-labs/breadboard@npm:^0.20.0":
+  version: 0.20.0
+  resolution: "@google-labs/breadboard@npm:0.20.0"
+  dependencies:
+    "@google-labs/breadboard-schema": "npm:^1.4.1"
+  checksum: 144395ff233e655662f84de30603d9831dd8dea400211315cb35a3d2db7644b2a8c0c20bc5f9ad63e1b9c01a24d79eadb647594ea84f26d5b4f30ef309d167df
+  languageName: node
+  linkType: hard
+
+"@google-labs/breadboard@npm:^0.27.3":
+  version: 0.27.3
+  resolution: "@google-labs/breadboard@npm:0.27.3"
+  dependencies:
+    "@breadboard-ai/types": "npm:0.1.1"
+    "@google-labs/breadboard-schema": "npm:^1.8.1"
+    json-schema: "npm:^0.4.0"
+  checksum: 02a07b62929f510415d66ce1e51a2c8c22798eecd170a88be6fd2890b89cfd101726bf36546336d9892747d047507f6df02afbd6f1b53bedaf7405c181dcbdc1
+  languageName: node
+  linkType: hard
+
+"@google-labs/core-kit@npm:^0.15.2":
+  version: 0.15.2
+  resolution: "@google-labs/core-kit@npm:0.15.2"
+  dependencies:
+    "@breadboard-ai/build": "npm:0.10.3"
+    "@google-labs/breadboard": "npm:^0.27.3"
+  checksum: 42a2aede23147903e69391b9798f6b59139e58d4c44bf5bbe155401c8573b6e31352b556e69d7825f2982fea2523ac47f0e0d14015deefb79331a93ca7b8486f
+  languageName: node
+  linkType: hard
+
+"@google-labs/llm-starter@npm:^0.3.15":
+  version: 0.3.15
+  resolution: "@google-labs/llm-starter@npm:0.3.15"
+  dependencies:
+    "@google-labs/breadboard": "npm:^0.20.0"
     url-template: "npm:^3.1.0"
-  checksum: 63f334af6680e2ec354aef54a1b3b3dd367fcb38c85b37deccaac8cbd59046482d0250df5124406db8b178d8090de7e8e6e82300d10e7c982a99b97cc43c5122
+  checksum: 6d422b99acd810186ef180eff1d9f1f440e45a521cfce122cb1608bb5e96892b3b21b3bb20a3cc7a493cae9aca53cf069ba82474bbfd3adde55c769380a95dc5
   languageName: node
   linkType: hard
 
-"@google-labs/palm-lite@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "@google-labs/palm-lite@npm:0.0.2"
-  checksum: dd8660069cfc1bfd44c4907164a4d2b23f1a091974f19a589fd0b631bf718cfbebd61901611f70c0bc9080621d972d9cf35ac925b640effe5911a7e82ff31446
-  languageName: node
-  linkType: hard
-
-"@rgrove/parse-xml@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@rgrove/parse-xml@npm:4.1.0"
-  checksum: ee596f39a3bbda616305df12421f617b5a167b35f3a0d300b8a3b1a84b08967f098173e418503017a7f7746f22841d995d40dce37152c04729948a65c5fd8ee6
+"@types/json-schema@npm:^7.0.15":
+  version: 7.0.15
+  resolution: "@types/json-schema@npm:7.0.15"
+  checksum: a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
   languageName: node
   linkType: hard
 
@@ -57,10 +88,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonata@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "jsonata@npm:2.0.3"
-  checksum: b66c522ffb407400d763385a248197558604ae8da918602a38da13a685e3a14441368c3292ad3bce804d65d02594f65d39443663985331d7d4870d9df0f713eb
+"json-schema@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "json-schema@npm:0.4.0"
+  checksum: d4a637ec1d83544857c1c163232f3da46912e971d5bf054ba44fdb88f07d8d359a462b4aec46f2745efbc57053365608d88bc1d7b1729f7b4fc3369765639ed3
   languageName: node
   linkType: hard
 
@@ -68,9 +99,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "poolish@workspace:."
   dependencies:
-    "@google-labs/breadboard": "npm:^0.5.0"
-    "@google-labs/core-kit": "npm:^0.0.1"
-    "@google-labs/llm-starter": "npm:^0.2.1"
+    "@google-labs/breadboard": "npm:^0.27.3"
+    "@google-labs/core-kit": "npm:^0.15.2"
+    "@google-labs/llm-starter": "npm:^0.3.15"
     "@types/node": "npm:^20.9.0"
     typescript: "npm:^5.2.2"
   languageName: unknown
