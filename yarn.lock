@@ -58,9 +58,9 @@ __metadata:
   linkType: hard
 
 "jsonata@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "jsonata@npm:2.0.3"
-  checksum: b66c522ffb407400d763385a248197558604ae8da918602a38da13a685e3a14441368c3292ad3bce804d65d02594f65d39443663985331d7d4870d9df0f713eb
+  version: 2.0.4
+  resolution: "jsonata@npm:2.0.4"
+  checksum: 0e5c3f9630dec7eb59d8c79b02aa6f6c4465af1a1638abae0b1d42df7a02f1911a3494038645d260cdc96b395f072498b5adf35927dea0918ad75a6401fb35ad
   languageName: node
   linkType: hard
 
