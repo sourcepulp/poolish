@@ -5,8 +5,8 @@
     "@google-labs/llm-starter": "^0.2.1"
   },
   "devDependencies": {
-    "@types/node": "^20.9.0",
-    "typescript": "^5.2.2"
+    "@types/node": "^22.10.1",
+    "typescript": "^5.7.2"
   },
   "name": "poolish",
   "packageManager": "yarn@4.0.1",
